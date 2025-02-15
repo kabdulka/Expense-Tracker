@@ -13,19 +13,12 @@ export const CATEGORIES = [
 ];
 
 const initialState = Object.fromEntries(CATEGORIES.map(category => [category, []])); 
-// const initialState = {
-//     category: "",
-//     description: "",
-//     amount: 0.0,
-//     id: ""
-// }
 
 const options = {
     name: "transactions",
     initialState: initialState,
     reducers: {
         addTransaction: (state, action) => {
-            console.log(action.payload.category);
             const {category} = action.payload;
             console.log(category)
             state[category].push(action.payload);

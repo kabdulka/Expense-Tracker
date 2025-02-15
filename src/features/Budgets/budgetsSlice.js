@@ -24,16 +24,8 @@ const options = {
     reducers: {
 
         editBudget: (state, action) => {
-            // find the budget to edit
-            // const newBudgets = state.budgets.map((budget) => {
-            //     if (budget.category === action.payload.category) {
-            //         return budget.amount = action.payload.amount
-            //     }
-            // })
-            // return newBudgets;
             state.forEach((budget) => {
                 if (budget.category === action.payload.category) {
-                    console.log(typeof budget.amount)
                     budget.amount = action.payload.amount
                 }
             });

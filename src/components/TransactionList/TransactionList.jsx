@@ -2,7 +2,6 @@ import React from 'react';
 import Transaction from '../Transaction/Transaction';
 
 const TransactionList = ({transactions}) => {
-    console.log(transactions)
     return (
         <section className="transaction-items">
             <h2> Transactions </h2>

@@ -5,7 +5,6 @@ import Budget from '../../components/Budget/Budget';
 
 const Budgets = () => {
     const budgets = useSelector(state => state.budgets);
-    console.log(budgets)
     return (
         <ul>
             {
