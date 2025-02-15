@@ -22,6 +22,10 @@ body {
   padding: 24px 20px 0px 20px;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
 h2 {
   margin: 0;
 }
@@ -60,10 +64,6 @@ select {
   border: solid 1px #141c3a;
   background-color: #ffffff;
 }
-
-
-
-
 
 /* wraps the entire budget component */
 .budget-container {
@@ -242,6 +242,63 @@ select {
 }
 
 
+@media only screen and (max-width: 450px) {
 
+  .budget-container {
+    padding: 1.5rem 0;
+  }
+
+  .amount-wrapper {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .budget-form {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  input {
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h2, h3, h4 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  .transactions-container {
+    padding-bottom: 30rem;
+  }
+
+  .new-transaction-section h2 {
+    font-size: 2rem;
+  }
+
+  .new-transaction-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  select {
+    font-size: 1rem;
+  }
+}
 
 
